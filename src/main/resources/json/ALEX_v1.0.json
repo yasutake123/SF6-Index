@@ -223,34 +223,8 @@
           "notes": ""
         },
         {
-          "name": "垂直ジャンプ弱P",
-          "input": "8LP",
-          "motion_frame": {
-            "startup": 4,
-            "active": "4-9",
-            "total": "着地後3"
-          },
-          "advantage": {},
-          "damage": 300,
-          "attribute": "中",
-          "notes": ""
-        },
-        {
-          "name": "斜めジャンプ弱P",
-          "input": "9LP",
-          "motion_frame": {
-            "startup": 4,
-            "active": "4-9",
-            "total": "着地後3"
-          },
-          "advantage": {},
-          "damage": 300,
-          "attribute": "中",
-          "notes": ""
-        },
-        {
-          "name": "垂直ジャンプ弱K",
-          "input": "8LK",
+          "name": "ジャンプ弱P",
+          "input": "J.LP",
           "motion_frame": {
             "startup": 5,
             "active": "5-12",
@@ -258,51 +232,56 @@
           },
           "advantage": {},
           "damage": 300,
+          "drive_gauge": {
+            "hit": 500,
+            "block": -1500,
+            "punish": -2000
+          },
+          "sa_gauge_gain": 300,
           "attribute": "中",
           "notes": ""
         },
         {
-          "name": "斜めジャンプ弱K",
-          "input": "9LK",
+          "name": "ジャンプ弱K",
+          "input": "J.LK",
           "motion_frame": {
-            "startup": 5,
-            "active": "5-12",
+            "startup": 6,
+            "active": "6-14",
             "total": "着地後3"
           },
           "advantage": {},
           "damage": 300,
+          "drive_gauge": {
+            "hit": 500,
+            "block": -1500,
+            "punish": -2000
+          },
+          "sa_gauge_gain": 300,
           "attribute": "中",
-          "notes": ""
+          "notes": "めくり性能"
         },
         {
-          "name": "垂直ジャンプ中P",
-          "input": "8MP",
+          "name": "ジャンプ中P",
+          "input": "J.MP",
           "motion_frame": {
             "startup": 7,
-            "active": "7-12",
+            "active": "7-10",
             "total": "着地後3"
           },
           "advantage": {},
           "damage": 700,
-          "attribute": "中",
-          "notes": ""
-        },
-        {
-          "name": "斜めジャンプ中P",
-          "input": "9MP",
-          "motion_frame": {
-            "startup": 7,
-            "active": "7-12",
-            "total": "着地後3"
+          "drive_gauge": {
+            "hit": 1000,
+            "block": -3000,
+            "punish": -4000
           },
-          "advantage": {},
-          "damage": 700,
+          "sa_gauge_gain": 500,
           "attribute": "中",
-          "notes": ""
+          "notes": "空中ヒット時吹き飛びダウン"
         },
         {
-          "name": "垂直ジャンプ中K",
-          "input": "8MK",
+          "name": "ジャンプ中K",
+          "input": "J.MK",
           "motion_frame": {
             "startup": 8,
             "active": "8-14",
@@ -310,25 +289,18 @@
           },
           "advantage": {},
           "damage": 700,
-          "attribute": "中",
-          "notes": ""
-        },
-        {
-          "name": "斜めジャンプ中K",
-          "input": "9MK",
-          "motion_frame": {
-            "startup": 8,
-            "active": "8-14",
-            "total": "着地後3"
+          "drive_gauge": {
+            "hit": 1000,
+            "block": -2500,
+            "punish": -4000
           },
-          "advantage": {},
-          "damage": 700,
+          "sa_gauge_gain": 500,
           "attribute": "中",
           "notes": ""
         },
         {
-          "name": "垂直ジャンプ強P",
-          "input": "8HP",
+          "name": "ジャンプ強P",
+          "input": "J.HP",
           "motion_frame": {
             "startup": 9,
             "active": "9-14",
@@ -336,45 +308,31 @@
           },
           "advantage": {},
           "damage": 800,
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -4000,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 1000,
           "attribute": "中",
-          "notes": ""
+          "notes": "空中ヒット時叩きつけダウン"
         },
         {
-          "name": "斜めジャンプ強P",
-          "input": "9HP",
+          "name": "ジャンプ強K",
+          "input": "J.HK",
           "motion_frame": {
-            "startup": 9,
-            "active": "9-14",
+            "startup": 10,
+            "active": "10-16",
             "total": "着地後3"
           },
           "advantage": {},
           "damage": 800,
-          "attribute": "中",
-          "notes": ""
-        },
-        {
-          "name": "垂直ジャンプ強K",
-          "input": "8HK",
-          "motion_frame": {
-            "startup": 10,
-            "active": "10-15",
-            "total": "着地後3"
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -4000,
+            "punish": -5000
           },
-          "advantage": {},
-          "damage": 900,
-          "attribute": "中",
-          "notes": ""
-        },
-        {
-          "name": "斜めジャンプ強K",
-          "input": "9HK",
-          "motion_frame": {
-            "startup": 10,
-            "active": "10-15",
-            "total": "着地後3"
-          },
-          "advantage": {},
-          "damage": 900,
+          "sa_gauge_gain": 1000,
           "attribute": "中",
           "notes": ""
         }
