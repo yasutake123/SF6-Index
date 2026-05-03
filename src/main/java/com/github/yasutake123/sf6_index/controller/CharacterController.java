@@ -2,6 +2,7 @@ package com.github.yasutake123.sf6_index.controller;
 
 import com.github.yasutake123.sf6_index.dto.CharacterData;
 import com.github.yasutake123.sf6_index.dto.Move;
+import com.github.yasutake123.sf6_index.service.CharacterService;
 
 import org.springframework.web.bind.annotation.RestController;  // コントローラーを定義するために使用する
 import org.springframework.web.bind.annotation.GetMapping;      // メソッドをマッピングするために使用する
@@ -25,6 +26,10 @@ public class CharacterController {
     // この@Autowiredは、Springが自動的にResourceLoaderを注入するために使用する
     @Autowired
     private ResourceLoader resourceLoader;
+
+    @Autowired
+    private CharacterService characterService;
+
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     // Jsonファイルを文字列のまま取得する
