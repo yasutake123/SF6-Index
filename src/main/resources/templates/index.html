@@ -16,11 +16,18 @@
                 <th>コマンド</th>
                 <th>発生</th>
                 <th>持続</th>
-                <th>硬直</th>
+                <th>全体</th>
             </tr>
         </thead>
         <tbody id="moveTableBody">
             <!-- 技データがここに挿入される -->
+            <tr th:each="move : ${moves}">
+                <td th:text="${move.name}"></td>
+                <td th:text="${move.input}"></td>
+                <td th:text="${move.motionFrame.startup}"></td>
+                <td th:text="${move.motionFrame.active}"></td>
+                <td th:text="${move.motionFrame.total}"></td>
+            </tr>
         </tbody>
     </table>
 </body>
