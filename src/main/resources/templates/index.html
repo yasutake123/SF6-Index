@@ -14,15 +14,26 @@
             <tr>
                 <th>技名</th>
                 <th>コマンド</th>
-                <th>発生</th>
-                <th>持続</th>
-                <th>全体</th>
+                <th>動作フレーム/発生</th>
+                <th>動作フレーム/持続</th>
+                <th>動作フレーム/全体</th>
+                <th>硬直差/ヒット</th>
+                <th>硬直差/ガード</th>
+                <th>キャンセル</th>
+                <th>ダメージ</th>
+                <th>コンボ補正値</th>
+                <th>Dゲージ増加/ヒット</th>
+                <th>Dゲージ減少/ガード</th>
+                <th>Dゲージ減少/パニッシュカウンター</th>
+                <th>SAゲージ増加</th>
+                <th>属性</th>
+                <th>備考</th>
             </tr>
         </thead>
         <tbody id="moveTableBody" th:each="section : ${sections}">
 
             <tr>
-                <td colspan="5" th:text="${section.category}"></td>
+                <td colspan="16" th:text="${section.category}"></td>
             </tr>
 
             <tr th:each="move : ${section.moves}">
@@ -31,6 +42,17 @@
                 <td th:text="${move.motionFrame.startup}"></td>
                 <td th:text="${move.motionFrame.active}"></td>
                 <td th:text="${move.motionFrame.total}"></td>
+                <td th:text="${move.advantage?.hit?:0}"></td>
+                <td th:text="${move.advantage?.guard?:0}"></td>
+                <td th:text="${move.cancel}"></td>
+                <td th:text="${move.damage}"></td>
+                <td th:text="${move.correction}"></td>
+                <td th:text="${move.driveGauge?.hit?:0}"></td>
+                <td th:text="${move.driveGauge?.block?:0}"></td>
+                <td th:text="${move.driveGauge?.punish?:0}"></td>
+                <td th:text="${move.saGaugeGain}"></td>
+                <td th:text="${move.attribute}"></td>
+                <td th:text="${move.notes}"></td>
             </tr>
 
         </tbody>
