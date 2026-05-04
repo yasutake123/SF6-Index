@@ -16,7 +16,7 @@ public class MoveViewController {
 
     @GetMapping("/table-Alex")
     public String showMoves(Model model) throws IOException{
-        model.addAttribute("moves", characterService.getData());
+        model.addAttribute("sections", characterService.getSections());
         return "index";
     }
     
