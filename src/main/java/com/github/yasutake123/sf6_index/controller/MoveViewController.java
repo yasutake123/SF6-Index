@@ -22,9 +22,12 @@ public class MoveViewController {
     }
     
     @GetMapping("/filter-table-Alex")
-    public String filterMoves(@RequestParam("keyword") String keyword, Model model) throws IOException{
-        model.addAttribute("sections", characterService.searchMovesByName(keyword));
+    public String filterMoves(@RequestParam("keyword") String keyword, 
+                            @RequestParam(required = false) Integer minGuard, 
+                            Model model) throws IOException{
+        model.addAttribute("sections", characterService.searchMovesByName(keyword, minGuard));
         model.addAttribute("keyword", keyword);
+        model.addAttribute("minGuard", minGuard);
         return "index";
     }
     
