@@ -22,13 +22,13 @@ public class CharacterService {
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     public List<Move> getData() throws IOException {
-        Resource resource = resourceLoader.getResource("classpath:json/ALEX_v1.0.json");
+        Resource resource = resourceLoader.getResource("classpath:json/ALEX_v1.2.json");
         CharacterData characterData = objectMapper.readValue(resource.getInputStream(), CharacterData.class);
         return characterData.getSections().get(0).getMoves();
     }
     
     public List<Section> getSections() throws IOException {
-        Resource resource = resourceLoader.getResource("classpath:json/ALEX_v1.0.json");
+        Resource resource = resourceLoader.getResource("classpath:json/ALEX_v1.2.json");
         CharacterData characterData = objectMapper.readValue(resource.getInputStream(), CharacterData.class);
         return characterData.getSections();
     }

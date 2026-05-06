@@ -8,6 +8,8 @@ public class Move {
     @JsonProperty("motion_frame")
     private MotionFrame motionFrame;
     private Advantage advantage;
+    @JsonProperty("is_down")
+    private Boolean isDown;
     private String damage;
     private String cancel;
     private String attribute;
@@ -29,6 +31,9 @@ public class Move {
     
     public Advantage getAdvantage() { return advantage; }
     public void setAdvantage(Advantage advantage) { this.advantage = advantage; }
+    
+    public Boolean getIsDown() { return isDown; }
+    public void setIsDown(Boolean isDown) { this.isDown = isDown; }
     
     public String getDamage() { return damage; }
     public void setDamage(String damage) { this.damage = damage; }

@@ -1,0 +1,2256 @@
+{
+  "version": "1.2",
+  "character": "ALEX",
+  "sections": [
+    {
+      "category": "通常技",
+      "moves": [
+        {
+          "name": "立ち弱P (クイックジャブ)",
+          "input": "5LP",
+          "motion_frame": {
+            "startup": "4",
+            "startup_val": 4,
+            "active": "4-5",
+            "active_val": 2,
+            "total": "9",
+            "total_val": 9
+          },
+          "advantage": {
+            "hit": "5",
+            "hit_val": 5,
+            "guard": "-1",
+            "guard_val": -1
+          },
+          "is_down": false,
+          "damage": 300,
+          "cancel": "C",
+          "attribute": "上",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 250,
+            "block": -500,
+            "punish": -2000
+          },
+          "sa_gauge_gain": 300,
+          "notes": "連打キャンセル対応"
+        },
+        {
+          "name": "立ち弱K (ローキック)",
+          "input": "5LK",
+          "motion_frame": {
+            "startup": "6",
+            "startup_val": 6,
+            "active": "6-7",
+            "active_val": 2,
+            "total": "13",
+            "total_val": 13
+          },
+          "advantage": {
+            "hit": "1",
+            "hit_val": 1,
+            "guard": "-5",
+            "guard_val": -5
+          },
+          "is_down": false,
+          "damage": 300,
+          "cancel": "C",
+          "attribute": "上",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 250,
+            "block": -500,
+            "punish": -2000
+          },
+          "sa_gauge_gain": 300,
+          "notes": ""
+        },
+        {
+          "name": "立ち中P (ボディー・ブロー)",
+          "input": "5MP",
+          "motion_frame": {
+            "startup": "7",
+            "startup_val": 7,
+            "active": "7-10",
+            "active_val": 4,
+            "total": "17",
+            "total_val": 17
+          },
+          "advantage": {
+            "hit": "3",
+            "hit_val": 3,
+            "guard": "0",
+            "guard_val": 0
+          },
+          "is_down": false,
+          "damage": 600,
+          "cancel": "C",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 1500,
+            "block": -3000,
+            "punish": -4000
+          },
+          "sa_gauge_gain": 500,
+          "notes": ""
+        },
+        {
+          "name": "立ち中K (ミドルキック)",
+          "input": "5MK",
+          "motion_frame": {
+            "startup": "9",
+            "startup_val": 9,
+            "active": "9-11",
+            "active_val": 3,
+            "total": "24",
+            "total_val": 24
+          },
+          "advantage": {
+            "hit": "1",
+            "hit_val": 1,
+            "guard": "-6",
+            "guard_val": -6
+          },
+          "is_down": false,
+          "damage": 700,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -4000,
+            "punish": -6000
+          },
+          "sa_gauge_gain": 700,
+          "notes": ""
+        },
+        {
+          "name": "立ち強P (フェイスクラッシャー)",
+          "input": "5HP",
+          "motion_frame": {
+            "startup": "12",
+            "startup_val": 12,
+            "active": "12-14",
+            "active_val": 3,
+            "total": "23",
+            "total_val": 23
+          },
+          "advantage": {
+            "hit": "2",
+            "hit_val": 2,
+            "guard": "-3",
+            "guard_val": -3
+          },
+          "is_down": false,
+          "damage": 800,
+          "cancel": "C",
+          "attribute": "上",
+          "correction": "始動補正10%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -5000,
+            "punish": -8000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": "溜め可能"
+        },
+        {
+          "name": "立ち強P (フェイスクラッシャー)(ホールド)",
+          "input": "[5HP]",
+          "motion_frame": {
+            "startup": "23",
+            "startup_val": 23,
+            "active": "23-25",
+            "active_val": 3,
+            "total": "22",
+            "total_val": 22
+          },
+          "advantage": {
+            "hit": "5",
+            "hit_val": 5,
+            "guard": "2",
+            "guard_val": 2
+          },
+          "is_down": false,
+          "damage": 1000,
+          "cancel": "C",
+          "attribute": "上",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 3000,
+            "block": -8000,
+            "punish": -12000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": ""
+        },
+        {
+          "name": "立ち強K (ロングキック)",
+          "input": "5HK",
+          "motion_frame": {
+            "startup": "14",
+            "startup_val": 14,
+            "active": "14-17",
+            "active_val": 4,
+            "total": "26",
+            "total_val": 26
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-6",
+            "guard_val": -6
+          },
+          "is_down": true,
+          "damage": 900,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "始動補正15%",
+          "drive_gauge": {
+            "hit": 3000,
+            "block": -5000,
+            "punish": -8000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": ""
+        },
+        {
+          "name": "立ち強K (ロングキック)(ホールド)",
+          "input": "[5HK]",
+          "motion_frame": {
+            "startup": "25",
+            "startup_val": 25,
+            "active": "25-27",
+            "active_val": 3,
+            "total": "20",
+            "total_val": 20
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "2",
+            "guard_val": 2
+          },
+          "is_down": true,
+          "damage": 1000,
+          "cancel": "※",
+          "attribute": "上",
+          "correction": "始動補正15%",
+          "drive_gauge": {
+            "hit": 3000,
+            "block": -8000,
+            "punish": -12000
+          },
+          "sa_gauge_gain": 1100,
+          "notes": "※ブレイカー・スタンスに派生可能 バニッシュカウンター時吹き飛び時間延長"
+        },
+        {
+          "name": "しゃがみ弱P (ロークロー)",
+          "input": "2LP",
+          "motion_frame": {
+            "startup": "4",
+            "startup_val": 4,
+            "active": "4-5",
+            "active_val": 2,
+            "total": "12",
+            "total_val": 12
+          },
+          "advantage": {
+            "hit": "4",
+            "hit_val": 4,
+            "guard": "-2",
+            "guard_val": -2
+          },
+          "is_down": false,
+          "damage": 300,
+          "cancel": "C",
+          "attribute": "上",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 250,
+            "block": -500,
+            "punish": -2000
+          },
+          "sa_gauge_gain": 300,
+          "notes": "連打キャンセル対応"
+        },
+        {
+          "name": "しゃがみ弱K (グランドロー)",
+          "input": "2LK",
+          "motion_frame": {
+            "startup": "5",
+            "startup_val": 5,
+            "active": "5-7",
+            "active_val": 3,
+            "total": "11",
+            "total_val": 11
+          },
+          "advantage": {
+            "hit": "2",
+            "hit_val": 2,
+            "guard": "-2",
+            "guard_val": -2
+          },
+          "is_down": false,
+          "damage": 200,
+          "cancel": "",
+          "attribute": "下",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 250,
+            "block": -500,
+            "punish": -2000
+          },
+          "sa_gauge_gain": 300,
+          "notes": "連打キャンセル対応"
+        },
+        {
+          "name": "しゃがみ中P (地獄突き)",
+          "input": "2MP",
+          "motion_frame": {
+            "startup": "8",
+            "startup_val": 8,
+            "active": "8-11",
+            "active_val": 4,
+            "total": "21",
+            "total_val": 21
+          },
+          "advantage": {
+            "hit": "5",
+            "hit_val": 5,
+            "guard": "-1",
+            "guard_val": -1
+          },
+          "is_down": false,
+          "damage": 600,
+          "cancel": "C",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 1500,
+            "block": -3000,
+            "punish": -4000
+          },
+          "sa_gauge_gain": 500,
+          "notes": ""
+        },
+        {
+          "name": "しゃがみ中K (シンキック)",
+          "input": "2MK",
+          "motion_frame": {
+            "startup": "9",
+            "startup_val": 9,
+            "active": "9-11",
+            "active_val": 3,
+            "total": "25",
+            "total_val": 25
+          },
+          "advantage": {
+            "hit": "3",
+            "hit_val": 3,
+            "guard": "-5",
+            "guard_val": -5
+          },
+          "is_down": false,
+          "damage": 600,
+          "cancel": "C",
+          "attribute": "下",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -4000,
+            "punish": -6000
+          },
+          "sa_gauge_gain": 600,
+          "notes": ""
+        },
+        {
+          "name": "しゃがみ強P (ビッグスワイプ)",
+          "input": "2HP",
+          "motion_frame": {
+            "startup": "10",
+            "startup_val": 10,
+            "active": "10-14",
+            "active_val": 5,
+            "total": "35",
+            "total_val": 35
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-13",
+            "guard_val": -13
+          },
+          "is_down": true,
+          "damage": 800,
+          "cancel": "C",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2500,
+            "block": -5000,
+            "punish": -8000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": ""
+        },
+        {
+          "name": "しゃがみ強K (ラウンドキック)",
+          "input": "2HK",
+          "motion_frame": {
+            "startup": "10",
+            "startup_val": 10,
+            "active": "10-12",
+            "active_val": 3,
+            "total": "26",
+            "total_val": 26
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-11",
+            "guard_val": -11
+          },
+          "is_down": true,
+          "damage": 1000,
+          "cancel": "",
+          "attribute": "下",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 3000,
+            "block": -4000,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": ""
+        },
+        {
+          "name": "ジャンプ弱P (ハイジャンプ)",
+          "input": "J.LP",
+          "motion_frame": {
+            "startup": "5",
+            "startup_val": 5,
+            "active": "5-12",
+            "active_val": 8,
+            "total": "着地後3",
+            "total_val": 3
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 300,
+          "cancel": "",
+          "attribute": "中",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 500,
+            "block": -1500,
+            "punish": -2000
+          },
+          "sa_gauge_gain": 300,
+          "notes": ""
+        },
+        {
+          "name": "ジャンプ弱K (フライングニー)",
+          "input": "J.LK",
+          "motion_frame": {
+            "startup": "6",
+            "startup_val": 6,
+            "active": "6-14",
+            "active_val": 9,
+            "total": "着地後3",
+            "total_val": 3
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 300,
+          "cancel": "",
+          "attribute": "中",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 500,
+            "block": -1500,
+            "punish": -2000
+          },
+          "sa_gauge_gain": 300,
+          "notes": "めくり性能"
+        },
+        {
+          "name": "ジャンプ中P (フライングニーチョップ)",
+          "input": "J.MP",
+          "motion_frame": {
+            "startup": "7",
+            "startup_val": 7,
+            "active": "7-10",
+            "active_val": 4,
+            "total": "着地後3",
+            "total_val": 3
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 700,
+          "cancel": "",
+          "attribute": "中",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 1000,
+            "block": -3000,
+            "punish": -4000
+          },
+          "sa_gauge_gain": 500,
+          "notes": "空中ヒット時吹き飛びダウン"
+        },
+        {
+          "name": "ジャンプ中K (ニールキック)",
+          "input": "J.MK",
+          "motion_frame": {
+            "startup": "8",
+            "startup_val": 8,
+            "active": "8-14",
+            "active_val": 7,
+            "total": "着地後3",
+            "total_val": 3
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 700,
+          "cancel": "",
+          "attribute": "中",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 1000,
+            "block": -2500,
+            "punish": -4000
+          },
+          "sa_gauge_gain": 500,
+          "notes": ""
+        },
+        {
+          "name": "ジャンプ強P (スカイハンマー)",
+          "input": "J.HP",
+          "motion_frame": {
+            "startup": "9",
+            "startup_val": 9,
+            "active": "9-14",
+            "active_val": 6,
+            "total": "着地後3",
+            "total_val": 3
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 800,
+          "cancel": "",
+          "attribute": "中",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -4000,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": "空中ヒット時叩きつけダウン"
+        },
+        {
+          "name": "ジャンプ強K (ドロップキック)",
+          "input": "J.HK",
+          "motion_frame": {
+            "startup": "10",
+            "startup_val": 10,
+            "active": "10-16",
+            "active_val": 7,
+            "total": "着地後3",
+            "total_val": 3
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 800,
+          "cancel": "",
+          "attribute": "中",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -4000,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "category": "特殊技・特殊移動",
+      "moves": [
+        {
+          "name": "ブレイカー・スタンス",
+          "input": "214P",
+          "motion_frame": {
+            "startup": "",
+            "startup_val": null,
+            "active": "",
+            "active_val": null,
+            "total": "18",
+            "total_val": 18
+          },
+          "advantage": {
+            "hit": "0",
+            "hit_val": 0,
+            "guard": "0",
+            "guard_val": 0
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "18Fから各種派生技に派生可能"
+        },
+        {
+          "name": "ステップイン",
+          "input": "BS.6",
+          "motion_frame": {
+            "startup": "",
+            "startup_val": null,
+            "active": "",
+            "active_val": null,
+            "total": "28",
+            "total_val": 28
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "BS中に6入力で前方移動。1Fからスラッシュエルボーに派生可能"
+        },
+        {
+          "name": "ステップアウト",
+          "input": "BS.4",
+          "motion_frame": {
+            "startup": "",
+            "startup_val": null,
+            "active": "",
+            "active_val": null,
+            "total": "31",
+            "total_val": 31
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "BS中に4入力で後方移動。31Fから各種派生技に派生可能"
+        },
+        {
+          "name": "弱スラッシュエルボー",
+          "input": "BS.6.LP",
+          "motion_frame": {
+            "startup": "12",
+            "startup_val": 12,
+            "active": "12-15",
+            "active_val": 4,
+            "total": "18",
+            "total_val": 18
+          },
+          "advantage": {
+            "hit": "3",
+            "hit_val": 3,
+            "guard": "-1",
+            "guard_val": -1
+          },
+          "is_down": false,
+          "damage": 1000,
+          "cancel": "",
+          "attribute": "",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -4000,
+            "punish": -4000
+          },
+          "sa_gauge_gain": 800,
+          "notes": "カウンター/PC時吹き飛びダウン"
+        },
+        {
+          "name": "ヘビーラリアット(ホールド)",
+          "input": "BS.HP h",
+          "motion_frame": {
+            "startup": "21",
+            "startup_val": 21,
+            "active": "21-23",
+            "active_val": 3,
+            "total": "19",
+            "total_val": 19
+          },
+          "advantage": {
+            "hit": "6",
+            "hit_val": 6,
+            "guard": "5",
+            "guard_val": 5
+          },
+          "is_down": false,
+          "damage": 1200,
+          "cancel": "",
+          "attribute": "",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -10000,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": "6-16F アーマー判定。PC時相手を背面にする"
+        },
+        {
+          "name": "タクティカルリープ",
+          "input": "BS.LK",
+          "motion_frame": {
+            "startup": "",
+            "startup_val": null,
+            "active": "",
+            "active_val": null,
+            "total": "39",
+            "total_val": 39
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "21Fから行動可能、7-36F空中判定"
+        },
+        {
+          "name": "スイープコンビネーション (2段目)",
+          "input": "BS.HK-6HK",
+          "motion_frame": {
+            "startup": "11",
+            "startup_val": 11,
+            "active": "11-13",
+            "active_val": 3,
+            "total": "46",
+            "total_val": 46
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-20",
+            "guard_val": -20
+          },
+          "is_down": true,
+          "damage": 600,
+          "cancel": "",
+          "attribute": "",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 1000,
+            "block": -3000,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 600,
+          "notes": "46Fから各種派生技に派生可能"
+        },
+        {
+          "name": "デンジャラスアプローチ",
+          "input": "BS.LP+LK (遠距離)",
+          "motion_frame": {
+            "startup": "21",
+            "startup_val": 21,
+            "active": "21-23",
+            "active_val": 3,
+            "total": "32",
+            "total_val": 32
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 2000,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 2000,
+          "notes": "PC時スパイラルDDTに変化"
+        },
+        {
+          "name": "パルムストライク",
+          "input": "5MP-5HP",
+          "motion_frame": {
+            "startup": "15",
+            "startup_val": 15,
+            "active": "15-17",
+            "active_val": 3,
+            "total": "21",
+            "total_val": 21
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-3",
+            "guard_val": -3
+          },
+          "is_down": true,
+          "damage": 1200,
+          "cancel": "※",
+          "attribute": "",
+          "correction": "即時補正30%",
+          "drive_gauge": {
+            "hit": 1500,
+            "block": -3000,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": "※ヒット時のみBSに派生可能"
+        },
+        {
+          "name": "ツイストドロップ",
+          "input": "2LP-2LK-2MP-2MK.214HP",
+          "motion_frame": {
+            "startup": "15",
+            "startup_val": 15,
+            "active": "15-17",
+            "active_val": 3,
+            "total": "30",
+            "total_val": 30
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-15",
+            "guard_val": -15
+          },
+          "is_down": true,
+          "damage": 1000,
+          "cancel": "",
+          "attribute": "",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2500,
+            "block": -3000,
+            "punish": -7000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": "※ヒット時のみBSに派生可能"
+        },
+        {
+          "name": "フライングクロスチョップ",
+          "input": "ジャンプ中に2HP",
+          "motion_frame": {
+            "startup": "21",
+            "startup_val": 21,
+            "active": "21-着地まで",
+            "active_val": null,
+            "total": "着地後36",
+            "total_val": 36
+          },
+          "advantage": {
+            "hit": "2～13",
+            "hit_val": 2,
+            "guard": "-12～-1",
+            "guard_val": -12
+          },
+          "is_down": false,
+          "damage": 800,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -4000,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": "ヒット・ガードさせた高度によって硬直差が変化"
+        },
+        {
+          "name": "中スラッシュエルボー",
+          "input": "BS.6.MP",
+          "motion_frame": {
+            "startup": "15",
+            "startup_val": 15,
+            "active": "15-18",
+            "active_val": 4,
+            "total": "18",
+            "total_val": 18
+          },
+          "advantage": {
+            "hit": "3",
+            "hit_val": 3,
+            "guard": "-1",
+            "guard_val": -1
+          },
+          "is_down": false,
+          "damage": 1000,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -4000,
+            "punish": -4000
+          },
+          "sa_gauge_gain": 800,
+          "notes": "カウンター/パニッシュカウンター時吹き飛びダウン"
+        },
+        {
+          "name": "強スラッシュエルボー",
+          "input": "BS.6.HP",
+          "motion_frame": {
+            "startup": "18",
+            "startup_val": 18,
+            "active": "18-21",
+            "active_val": 4,
+            "total": "18",
+            "total_val": 18
+          },
+          "advantage": {
+            "hit": "3",
+            "hit_val": 3,
+            "guard": "-1",
+            "guard_val": -1
+          },
+          "is_down": false,
+          "damage": 1000,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -4000,
+            "punish": -4000
+          },
+          "sa_gauge_gain": 800,
+          "notes": "カウンター/パニッシュカウンター時吹き飛びダウン"
+        },
+        {
+          "name": "パームコンタクト",
+          "input": "BS.LP",
+          "motion_frame": {
+            "startup": "4",
+            "startup_val": 4,
+            "active": "4-6",
+            "active_val": 3,
+            "total": "9",
+            "total_val": 9
+          },
+          "advantage": {
+            "hit": "7",
+            "hit_val": 7,
+            "guard": "1",
+            "guard_val": 1
+          },
+          "is_down": false,
+          "damage": 300,
+          "cancel": "C",
+          "attribute": "上",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 300,
+            "block": -500,
+            "punish": -2000
+          },
+          "sa_gauge_gain": 300,
+          "notes": "連打キャンセル対応 15Fから各種派生技にキャンセル可能"
+        },
+        {
+          "name": "ショルダーランチャー",
+          "input": "BS.MP",
+          "motion_frame": {
+            "startup": "7",
+            "startup_val": 7,
+            "active": "7-13",
+            "active_val": 7,
+            "total": "17",
+            "total_val": 17
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-6",
+            "guard_val": -6
+          },
+          "is_down": true,
+          "damage": 800,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -3000,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 800,
+          "notes": "カウンター/パニッシュカウンター時ムーンフォールに派生 SAゲージ2000増加"
+        },
+        {
+          "name": "ヘビーラリアット",
+          "input": "BS.HP",
+          "motion_frame": {
+            "startup": "12",
+            "startup_val": 12,
+            "active": "12-14",
+            "active_val": 3,
+            "total": "19",
+            "total_val": 19
+          },
+          "advantage": {
+            "hit": "6",
+            "hit_val": 6,
+            "guard": "3",
+            "guard_val": 3
+          },
+          "is_down": false,
+          "damage": 1000,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -8000,
+            "punish": -8000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": "ボタンホールド時、6F～アーマー判定（2回） 13F以上ホールドすると性能変化"
+        },
+        {
+          "name": "エアスタンピート",
+          "input": "BS.8",
+          "motion_frame": {
+            "startup": "30",
+            "startup_val": 30,
+            "active": "30-31",
+            "active_val": 2,
+            "total": "17",
+            "total_val": 17
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "2",
+            "guard_val": 2
+          },
+          "is_down": true,
+          "damage": 1100,
+          "cancel": "",
+          "attribute": "中",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 3000,
+            "block": -8000,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 1100,
+          "notes": "9-30F 空中判定 パニッシュカウンター時床バウンド"
+        },
+        {
+          "name": "スイープコンビネーション (1段目)",
+          "input": "BS.HK",
+          "motion_frame": {
+            "startup": "11",
+            "startup_val": 11,
+            "active": "11-13",
+            "active_val": 3,
+            "total": "43",
+            "total_val": 43
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-17",
+            "guard_val": -17
+          },
+          "is_down": true,
+          "damage": 600,
+          "cancel": "",
+          "attribute": "下",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -3000,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 800,
+          "notes": "43Fから各種派生技にキャンセル可能 地上カウンター/パニッシュカウンター時フライングスープレックスに派生 ・ダメージ1700 ・SAゲージ1000増加"
+        },
+        {
+          "name": "ハイパーリフト",
+          "input": "BS.LP+LK",
+          "motion_frame": {
+            "startup": "5",
+            "startup_val": 5,
+            "active": "5-7",
+            "active_val": 3,
+            "total": "23",
+            "total_val": 23
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 1200,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 2000,
+          "notes": "パニッシュカウンター時デスバレーボムに変化 ・ダメージ2040 ・SAゲージ4000増加"
+        },
+        {
+          "name": "チョップ",
+          "input": "6MP",
+          "motion_frame": {
+            "startup": "22",
+            "startup_val": 22,
+            "active": "22-23",
+            "active_val": 2,
+            "total": "19",
+            "total_val": 19
+          },
+          "advantage": {
+            "hit": "3",
+            "hit_val": 3,
+            "guard": "-3",
+            "guard_val": -3
+          },
+          "is_down": false,
+          "damage": 800,
+          "cancel": "",
+          "attribute": "中",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 1000,
+            "block": -2500,
+            "punish": -4000
+          },
+          "sa_gauge_gain": 500,
+          "notes": ""
+        },
+        {
+          "name": "オブリークスタンプ",
+          "input": "3HK",
+          "motion_frame": {
+            "startup": "7",
+            "startup_val": 7,
+            "active": "7-9",
+            "active_val": 3,
+            "total": "15",
+            "total_val": 15
+          },
+          "advantage": {
+            "hit": "5",
+            "hit_val": 5,
+            "guard": "1",
+            "guard_val": 1
+          },
+          "is_down": false,
+          "damage": 600,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 1500,
+            "block": -4000,
+            "punish": -6000
+          },
+          "sa_gauge_gain": 500,
+          "notes": "背面ヒット時コラプス・ドライバーに派生 ・ダメージ1400 ・SAゲージ2000増加"
+        }
+      ]
+    },
+    {
+      "category": "必殺技",
+      "moves": [
+        {
+          "name": "弱フラッシュアックス",
+          "input": "236LP",
+          "motion_frame": {
+            "startup": "13",
+            "startup_val": 13,
+            "active": "13-15",
+            "active_val": 3,
+            "total": "21",
+            "total_val": 21
+          },
+          "advantage": {
+            "hit": "3",
+            "hit_val": 3,
+            "guard": "-4",
+            "guard_val": -4
+          },
+          "is_down": false,
+          "damage": 800,
+          "cancel": "SA3",
+          "attribute": "上",
+          "correction": "始動補正20% コンボ補正20%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -3000,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 800,
+          "notes": ""
+        },
+        {
+          "name": "中フラッシュアックス",
+          "input": "236MP",
+          "motion_frame": {
+            "startup": "17",
+            "startup_val": 17,
+            "active": "17-20",
+            "active_val": 4,
+            "total": "23",
+            "total_val": 23
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-6",
+            "guard_val": -6
+          },
+          "is_down": true,
+          "damage": 1000,
+          "cancel": "SA3※",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -6000,
+            "punish": -7000
+          },
+          "sa_gauge_gain": 1000,
+          "notes": "※ヒット時のみブレイカー・スタンスに派生可能"
+        },
+        {
+          "name": "フラッシュチョップ",
+          "input": "236HP",
+          "motion_frame": {
+            "startup": "26",
+            "startup_val": 26,
+            "active": "26-29",
+            "active_val": 4,
+            "total": "19",
+            "total_val": 19
+          },
+          "advantage": {
+            "hit": "5",
+            "hit_val": 5,
+            "guard": "2",
+            "guard_val": 2
+          },
+          "is_down": false,
+          "damage": 1100,
+          "cancel": "SA3",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -7000,
+            "punish": -12000
+          },
+          "sa_gauge_gain": 1150,
+          "notes": "ヒット時相手を背面やられに"
+        },
+        {
+          "name": "OD フラッシュチョップ",
+          "input": "236PP",
+          "motion_frame": {
+            "startup": "15",
+            "startup_val": 15,
+            "active": "15-18",
+            "active_val": 4,
+            "total": "25",
+            "total_val": 25
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-4",
+            "guard_val": -4
+          },
+          "is_down": true,
+          "damage": 1300,
+          "cancel": "SA2※",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": -5000,
+            "punish": -8000
+          },
+          "sa_gauge_gain": 1100,
+          "notes": "※ヒット時のみブレイカー・スタンスに派生可能"
+        },
+        {
+          "name": "弱エアニースマッシュ",
+          "input": "623LK",
+          "motion_frame": {
+            "startup": "6",
+            "startup_val": 6,
+            "active": "6-13",
+            "active_val": 8,
+            "total": "43",
+            "total_val": 43
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 1200,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": 0,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 1300,
+          "notes": "1-10F 空中判定の打撃・飛び道具属性に対して無敵\n5-32F 空中判定\n地上の相手に当たらない"
+        },
+        {
+          "name": "中エアニースマッシュ",
+          "input": "623MK",
+          "motion_frame": {
+            "startup": "8",
+            "startup_val": 8,
+            "active": "8-16",
+            "active_val": 9,
+            "total": "42",
+            "total_val": 42
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 1400,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": 0,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 1300,
+          "notes": "1-16F 空中判定の打撃・飛び道具属性に対して無敵\n6-34F 空中判定\n地上の相手に当たらない"
+        },
+        {
+          "name": "強エアニースマッシュ",
+          "input": "623HK",
+          "motion_frame": {
+            "startup": "14",
+            "startup_val": 14,
+            "active": "14-21",
+            "active_val": 8,
+            "total": "49",
+            "total_val": 49
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-42",
+            "guard_val": -42
+          },
+          "is_down": true,
+          "damage": 1500,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": -1500,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 1300,
+          "notes": "1-21F 空中判定の打撃・飛び道具属性に対して無敵\n16-42F 空中判定"
+        },
+        {
+          "name": "OD エアニースマッシュ",
+          "input": "623KK",
+          "motion_frame": {
+            "startup": "10",
+            "startup_val": 10,
+            "active": "10-17",
+            "active_val": 8,
+            "total": "53",
+            "total_val": 53
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-46",
+            "guard_val": -46
+          },
+          "is_down": true,
+          "damage": 1700,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": -1500,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 2000,
+          "notes": "1-17F 空中判定の打撃・飛び道具属性に対して無敵\n12-38F 空中判定"
+        },
+        {
+          "name": "弱パワーボム",
+          "input": "63214LP",
+          "motion_frame": {
+            "startup": "9",
+            "startup_val": 9,
+            "active": "9-11",
+            "active_val": 3,
+            "total": "50",
+            "total_val": 50
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 2500,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "即時補正20%",
+          "drive_gauge": {
+            "hit": 5000,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 3000,
+          "notes": "パニッシュカウンター時個別ダメージ (2875)"
+        },
+        {
+          "name": "中パワーボム",
+          "input": "63214MP",
+          "motion_frame": {
+            "startup": "7",
+            "startup_val": 7,
+            "active": "7-9",
+            "active_val": 3,
+            "total": "52",
+            "total_val": 52
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 2500,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "即時補正20%",
+          "drive_gauge": {
+            "hit": 5000,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 3000,
+          "notes": "■クラシック操作\nパニッシュカウンター時個別ダメージ (2875)\n■モダン操作時\nパニッシュカウンター時個別ダメージ (2300)"
+        },
+        {
+          "name": "強パワーボム",
+          "input": "63214HP",
+          "motion_frame": {
+            "startup": "5",
+            "startup_val": 5,
+            "active": "5-7",
+            "active_val": 3,
+            "total": "54",
+            "total_val": 54
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 2500,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "即時補正20%",
+          "drive_gauge": {
+            "hit": 5000,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 3000,
+          "notes": "パニッシュカウンター時個別ダメージ (2875)"
+        },
+        {
+          "name": "OD パワーボム",
+          "input": "63214PP",
+          "motion_frame": {
+            "startup": "5",
+            "startup_val": 5,
+            "active": "5-7",
+            "active_val": 3,
+            "total": "54",
+            "total_val": 54
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 2900,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "即時補正20%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 3000,
+          "notes": "■クラシック操作\nパニッシュカウンター時個別ダメージ (3335)\n■モダン操作時\nパニッシュカウンター時個別ダメージ (2668)"
+        },
+        {
+          "name": "パワードロップ",
+          "input": "背面近距離で63214P",
+          "motion_frame": {
+            "startup": "5",
+            "startup_val": 5,
+            "active": "5-7",
+            "active_val": 3,
+            "total": "54",
+            "total_val": 54
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 2800,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "即時補正20%",
+          "drive_gauge": {
+            "hit": 5000,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 3000,
+          "notes": ""
+        },
+        {
+          "name": "OD パワードロップ",
+          "input": "背面近距離で63214PP",
+          "motion_frame": {
+            "startup": "5",
+            "startup_val": 5,
+            "active": "5-7",
+            "active_val": 3,
+            "total": "54",
+            "total_val": 54
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 3000,
+          "cancel": "※",
+          "attribute": "投",
+          "correction": "始動補正40% コンボ補正20% 即時補正15%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 3000,
+          "notes": "※オメガウィングバスターに派生可能"
+        },
+        {
+          "name": "ハイパーボム",
+          "input": "ODパワードロップ中に.6",
+          "motion_frame": {
+            "startup": "",
+            "startup_val": null,
+            "active": "",
+            "active_val": null,
+            "total": "",
+            "total_val": null
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 3200,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "始動補正40% コンボ補正20% 即時補正15%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": -11000
+          },
+          "sa_gauge_gain": 3000,
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "category": "スーパーアーツ",
+      "moves": [
+        {
+          "name": "SA1 レイジングスピアー",
+          "input": "236236K",
+          "motion_frame": {
+            "startup": "9",
+            "startup_val": 9,
+            "active": "9-13",
+            "active_val": 5,
+            "total": "55",
+            "total_val": 55
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-38",
+            "guard_val": -38
+          },
+          "is_down": true,
+          "damage": 2000,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "最低保障30%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": -2500,
+            "punish": -5000
+          },
+          "sa_gauge_gain": 0,
+          "notes": "1-8F 打撃・投げに対して無敵\n最低保障ダメージ30%\nカウンター/パニッシュカウンターで数値が変動しない"
+        },
+        {
+          "name": "SA2 スレッジクロスハンマー",
+          "input": "214214P",
+          "motion_frame": {
+            "startup": "13",
+            "startup_val": 13,
+            "active": "13-16",
+            "active_val": 4,
+            "total": "50",
+            "total_val": 50
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-29",
+            "guard_val": -29
+          },
+          "is_down": true,
+          "damage": 3000,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "始動補正50% コンボ補正20%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": -5000,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 0,
+          "notes": "1-16F 完全無敵\n最低保障ダメージ40%\n空中ヒット時は非ロック技に性能が変化する\n※ダメージ2000、壁やられ\nカウンター/パニッシュカウンターで数値が変動しない"
+        },
+        {
+          "name": "SA2 オメガウィングバスター",
+          "input": "ODパワードロップ中に.214PP",
+          "motion_frame": {
+            "startup": "",
+            "startup_val": null,
+            "active": "",
+            "active_val": null,
+            "total": "",
+            "total_val": null
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 2800,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "最低保障40%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 0,
+          "notes": "最低保障ダメージ40%"
+        },
+        {
+          "name": "SA3 ファイナルキャプチュード",
+          "input": "236236P",
+          "motion_frame": {
+            "startup": "12",
+            "startup_val": 12,
+            "active": "12-16",
+            "active_val": 5,
+            "total": "53",
+            "total_val": 53
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-38",
+            "guard_val": -38
+          },
+          "is_down": true,
+          "damage": 4000,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "最低保障50%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": -7500,
+            "punish": -15000
+          },
+          "sa_gauge_gain": 0,
+          "notes": "1-16F 完全無敵\n最低保障ダメージ50%\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技キャンセル時のみ適用"
+        },
+        {
+          "name": "CA ファイナルキャプチュード",
+          "input": "(体力25%以下で)236236P",
+          "motion_frame": {
+            "startup": "12",
+            "startup_val": 12,
+            "active": "12-16",
+            "active_val": 5,
+            "total": "53",
+            "total_val": 53
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-38",
+            "guard_val": -38
+          },
+          "is_down": true,
+          "damage": 4500,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "最低保障50%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": -10000,
+            "punish": -20000
+          },
+          "sa_gauge_gain": 0,
+          "notes": "1-16F 完全無敵\n最低保障ダメージ50%\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技キャンセル時のみ適用"
+        }
+      ]
+    },
+    {
+      "category": "通常投げ",
+      "moves": [
+        {
+          "name": "アームロック",
+          "input": "5LP+LK",
+          "motion_frame": {
+            "startup": "5",
+            "startup_val": 5,
+            "active": "5-7",
+            "active_val": 3,
+            "total": "23",
+            "total_val": 23
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 1200,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "即時補正20%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 2000,
+          "notes": "パニッシュカウンター時以下の性能変化\n・ダメージ2040\n・SAゲージ4000増加\n・ハードノックダウン"
+        },
+        {
+          "name": "ギロチンハンマー",
+          "input": "6LP+LK",
+          "motion_frame": {
+            "startup": "5",
+            "startup_val": 5,
+            "active": "5-7",
+            "active_val": 3,
+            "total": "23",
+            "total_val": 23
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 1200,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "即時補正20%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 2000,
+          "notes": "パニッシュカウンター時以下の性能変化\n・ダメージ2040\n・SAゲージ4000増加\n・ハードノックダウン"
+        },
+        {
+          "name": "イリーガルキック",
+          "input": "4LP+LK",
+          "motion_frame": {
+            "startup": "5",
+            "startup_val": 5,
+            "active": "5-7",
+            "active_val": 3,
+            "total": "23",
+            "total_val": 23
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": true,
+          "damage": 1300,
+          "cancel": "",
+          "attribute": "投",
+          "correction": "即時補正20%",
+          "drive_gauge": {
+            "hit": 2000,
+            "block": 0,
+            "punish": -10000
+          },
+          "sa_gauge_gain": 2000,
+          "notes": "パニッシュカウンター時以下の性能変化\n・ダメージ2040\n・SAゲージ4000増加\n・ハードノックダウン"
+        }
+      ]
+    },
+    {
+      "category": "共通システム",
+      "moves": [
+        {
+          "name": "前方ステップ",
+          "input": "66",
+          "motion_frame": {
+            "startup": "",
+            "startup_val": null,
+            "active": "",
+            "active_val": null,
+            "total": "22",
+            "total_val": 22
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": ""
+        },
+        {
+          "name": "後方ステップ",
+          "input": "44",
+          "motion_frame": {
+            "startup": "",
+            "startup_val": null,
+            "active": "",
+            "active_val": null,
+            "total": "25",
+            "total_val": 25
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "1-15F 投げ無敵"
+        },
+        {
+          "name": "ドライブインパクト (レッグラリアート)",
+          "input": "HP+HK",
+          "motion_frame": {
+            "startup": "26",
+            "startup_val": 26,
+            "active": "26-27",
+            "active_val": 2,
+            "total": "35",
+            "total_val": 35
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-3",
+            "guard_val": -3
+          },
+          "is_down": true,
+          "damage": 800,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "始動補正20%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": -5000,
+            "punish": -15000
+          },
+          "sa_gauge_gain": 0,
+          "notes": "1-27F アーマー判定（2回）\nヒットバックでステージ端に到達すると壁やられが発生\nパニッシュカウンター、もしくはアーマー成立後にヒットで以下の性能変化\n・地上ヒット膝崩れ\n・空中ヒット吹き飛び時間増加\n・SAゲージ3000増加"
+        },
+        {
+          "name": "[ガード時]ドライブリバーサル (ヘッドバッド)",
+          "input": "ガード中に6+HP+HK",
+          "motion_frame": {
+            "startup": "20",
+            "startup_val": 20,
+            "active": "20-22",
+            "active_val": 3,
+            "total": "26",
+            "total_val": 26
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-6",
+            "guard_val": -6
+          },
+          "is_down": true,
+          "damage": 500,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "リカバリアブルダメージ\n1-22F 完全無敵\nヒット時硬直5F増加"
+        },
+        {
+          "name": "[起き上がり時]ドライブリバーサル (ヘッドバッド)",
+          "input": "起き上がり中に6+HP+HK",
+          "motion_frame": {
+            "startup": "18",
+            "startup_val": 18,
+            "active": "18-20",
+            "active_val": 3,
+            "total": "26",
+            "total_val": 26
+          },
+          "advantage": {
+            "hit": "D",
+            "hit_val": null,
+            "guard": "-8",
+            "guard_val": -8
+          },
+          "is_down": true,
+          "damage": 500,
+          "cancel": "",
+          "attribute": "上",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "リカバリアブルダメージ\n1-20F 完全無敵\nヒット時硬直5F増加"
+        },
+        {
+          "name": "パリイドライブラッシュ",
+          "input": "DR (パリイ中に66)",
+          "motion_frame": {
+            "startup": "",
+            "startup_val": null,
+            "active": "",
+            "active_val": null,
+            "total": "45",
+            "total_val": 45
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "受算補正15%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "暗転10F。動作9F目から攻撃行動に派生可能。24F目からパリイ以外の行動に派生可能"
+        },
+        {
+          "name": "キャンセルドライブラッシュ",
+          "input": "DR (キャンセル可能な攻撃ヒット・ガード時に66)",
+          "motion_frame": {
+            "startup": "",
+            "startup_val": null,
+            "active": "",
+            "active_val": null,
+            "total": "46",
+            "total_val": 46
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "乗算補正15%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "暗転9F\n※動作10F目から攻撃行動にキャンセル可\n25F目からパリィ以外の行動でキャンセル可"
+        },
+        {
+          "name": "ドライブパリイ",
+          "input": "MP+MK",
+          "motion_frame": {
+            "startup": "1",
+            "startup_val": 1,
+            "active": "1-12",
+            "active_val": 12,
+            "total": "33",
+            "total_val": 33
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "動作4F目からDRに派生可能。ボタンホールドで持続延長"
+        },
+        {
+          "name": "ジャストパリイ (打撃)",
+          "input": "相手の攻撃に合わせてMP+MK",
+          "motion_frame": {
+            "startup": "1",
+            "startup_val": 1,
+            "active": "",
+            "active_val": null,
+            "total": "1",
+            "total_val": 1
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "始動補正50%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "成立時Dゲージ3000増加"
+        },
+        {
+          "name": "ジャストパリィ (飛び道具)",
+          "input": "ガード方向 + MP+MK",
+          "motion_frame": {
+            "startup": "1",
+            "startup_val": 1,
+            "active": "",
+            "active_val": null,
+            "total": "10",
+            "total_val": 10
+          },
+          "advantage": {
+            "hit": "",
+            "hit_val": null,
+            "guard": "",
+            "guard_val": null
+          },
+          "is_down": false,
+          "damage": 0,
+          "cancel": "",
+          "attribute": "",
+          "correction": "始動補正50%",
+          "drive_gauge": {
+            "hit": 0,
+            "block": 0,
+            "punish": 0
+          },
+          "sa_gauge_gain": 0,
+          "notes": "パリィを入力したフレーム、もしくはその次のフレームで攻撃を受けると成立する\n暗転演出が入らない\nジャストパリィを取られた側はキャンセルが出来なくなり、動作終了まで強制パニッシュカウンター"
+        }
+      ]
+    }
+  ]
+}

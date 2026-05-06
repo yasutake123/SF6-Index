@@ -32,7 +32,7 @@ public class CharacterController {
     @GetMapping("/alex-data")
     public String getAlexJson() throws IOException {
         // "classpath:"は、src/main/resourcesフォルダーからファイルを読み込むためのプレフィックス
-        Resource resource = resourceLoader.getResource("classpath:json/ALEX_v1.0.json");
+        Resource resource = resourceLoader.getResource("classpath:json/ALEX_v1.2.json");
         return StreamUtils.copyToString(resource.getInputStream(), StandardCharsets.UTF_8);
     }
 
