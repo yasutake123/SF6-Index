@@ -34,24 +34,30 @@ public class CharacterService {
     }
     
     /** keyword が null / 空ならフィルタせず全件。それ以外は名前の部分一致（大文字小文字無視）。 */
-    public List<Move> searchMovesByName(String keyword) throws IOException {
-        List<Move> all = getData();
-        List<Move> matched = new ArrayList<>();
+    public List<Section> searchMovesByName(String keyword, Integer minGuard) throws IOException {
+        List<Section> allSections = getSections();
+        List<Section> matchedSections = new ArrayList<>();
+        
+        String needle = (keyword != null) ? keyword.toLowerCase() : "";
+        for (Section section : allSections) {
+            
+            List<Move> matchedMoves = new ArrayList<>();
+            for (Move m : section.getMoves()) {
+                boolean nameMatched = (keyword == null || keyword.isEmpty() || m.getName().toLowerCase().contains(needle));
+                boolean guardMatched = (minGuard == null || (m.getAdvantage() != null && m.getAdvantage().getGuardVal() != null && m.getAdvantage().getGuardVal() <= minGuard));
 
-        if (keyword == null || keyword.isEmpty()) {
-            return List.copyOf(all);
-        }
+                if (nameMatched && guardMatched) {
+                    matchedMoves.add(m);
+                }
+            }
 
-        String needle = keyword.toLowerCase();
-        for (Move m : all) {
-            String name = m.getName();
-            if (name == null || name.isEmpty()) {
-                continue;
-            }
-            if (name.toLowerCase().contains(needle)) {
-                matched.add(m);
+            if (!matchedMoves.isEmpty()) {
+                Section filteredSection = new Section();
+                filteredSection.setCategory(section.getCategory());
+                filteredSection.setMoves(matchedMoves);
+                matchedSections.add(filteredSection);
             }
         }
-        return matched;
+        return matchedSections;
     }
 }
