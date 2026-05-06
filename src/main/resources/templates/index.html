@@ -10,6 +10,7 @@
     <p>ALEXの技一覧</p>
     <form action="/filter-table-Alex" method="get">
         <input type="text" id="keyword" name="keyword" placeholder="技名を入力" th:value="${keyword}">
+        <input type="number" id="minGuard" name="minGuard" placeholder="最小ガード硬直" th:value="${minGuard}">
         <button type="submit">検索</button>
     </form>
     <table id="moveTable" border="1">
