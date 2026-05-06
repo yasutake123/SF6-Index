@@ -1,6 +1,7 @@
 package com.github.yasutake123.sf6_index.controller;
 
 import com.github.yasutake123.sf6_index.dto.Move;
+import com.github.yasutake123.sf6_index.dto.Section;
 import com.github.yasutake123.sf6_index.service.CharacterService;
 
 import org.springframework.web.bind.annotation.RestController;  // コントローラーを定義するために使用する
@@ -44,8 +45,8 @@ public class CharacterController {
     }
 
     @GetMapping("/search")
-    public List<Move> search(@RequestParam(required = false) String name) throws IOException {
-        return characterService.searchMovesByName(name);
+    public List<Section> search(@RequestParam(required = false) String keyword) throws IOException {
+        return characterService.searchMovesByName(keyword);
     }
 
 }
