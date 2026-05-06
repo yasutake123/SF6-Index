@@ -1,13 +1,11 @@
 package com.github.yasutake123.sf6_index.controller;
 
 import com.github.yasutake123.sf6_index.dto.Move;
-import com.github.yasutake123.sf6_index.dto.Section;
 import com.github.yasutake123.sf6_index.service.CharacterService;
 
 import org.springframework.web.bind.annotation.RestController;  // コントローラーを定義するために使用する
 import org.springframework.web.bind.annotation.GetMapping;      // メソッドをマッピングするために使用する
 import org.springframework.beans.factory.annotation.Autowired;  // 依存性注入を行うために使用する
-import org.springframework.web.bind.annotation.RequestParam;
 
 import org.springframework.core.io.ResourceLoader;              // 本（ファイル）の場所を指定する
 import org.springframework.core.io.Resource;                    // 本の名前を決める
@@ -43,10 +41,4 @@ public class CharacterController {
         List<Move> moves = characterService.getData();
         return moves;
     }
-
-    @GetMapping("/search")
-    public List<Section> search(@RequestParam(required = false) String keyword) throws IOException {
-        return characterService.searchMovesByName(keyword);
-    }
-
 }
