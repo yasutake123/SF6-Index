@@ -34,24 +34,31 @@ public class CharacterService {
     }
     
     /** keyword が null / 空ならフィルタせず全件。それ以外は名前の部分一致（大文字小文字無視）。 */
-    public List<Move> searchMovesByName(String keyword) throws IOException {
-        List<Move> all = getData();
-        List<Move> matched = new ArrayList<>();
-
+    public List<Section> searchMovesByName(String keyword) throws IOException {
+        List<Section> allSections = getSections();
+        List<Section> matchedSections = new ArrayList<>();
+        
         if (keyword == null || keyword.isEmpty()) {
-            return List.copyOf(all);
+            return List.copyOf(allSections);
         }
-
+        
         String needle = keyword.toLowerCase();
-        for (Move m : all) {
-            String name = m.getName();
-            if (name == null || name.isEmpty()) {
-                continue;
+        for (Section section : allSections) {
+
+            List<Move> matchedMoves = new ArrayList<>();
+            for (Move m : section.getMoves()) {
+                if (m.getName().toLowerCase().contains(needle)) {
+                    matchedMoves.add(m);
+                }
             }
-            if (name.toLowerCase().contains(needle)) {
-                matched.add(m);
+            
+            if (!matchedMoves.isEmpty()) {
+                Section filteredSection = new Section();
+                filteredSection.setCategory(section.getCategory());
+                filteredSection.setMoves(matchedMoves);
+                matchedSections.add(filteredSection);
             }
         }
-        return matched;
+        return matchedSections;
     }
 }
