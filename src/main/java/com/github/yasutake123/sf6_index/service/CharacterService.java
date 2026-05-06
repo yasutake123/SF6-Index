@@ -13,6 +13,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.yasutake123.sf6_index.dto.CharacterData;
 import com.github.yasutake123.sf6_index.dto.Move;
 import com.github.yasutake123.sf6_index.dto.Section;
+import com.github.yasutake123.sf6_index.dto.MotionFrame;
 
 @Service
 public class CharacterService {
@@ -34,24 +35,23 @@ public class CharacterService {
     }
     
     /** keyword が null / 空ならフィルタせず全件。それ以外は名前の部分一致（大文字小文字無視）。 */
-    public List<Section> searchMovesByName(String keyword) throws IOException {
+    public List<Section> searchMovesByName(String keyword, Integer minGuard) throws IOException {
         List<Section> allSections = getSections();
         List<Section> matchedSections = new ArrayList<>();
         
-        if (keyword == null || keyword.isEmpty()) {
-            return List.copyOf(allSections);
-        }
-        
-        String needle = keyword.toLowerCase();
+        String needle = (keyword != null) ? keyword.toLowerCase() : "";
         for (Section section : allSections) {
-
+            
             List<Move> matchedMoves = new ArrayList<>();
             for (Move m : section.getMoves()) {
-                if (m.getName().toLowerCase().contains(needle)) {
+                boolean nameMatched = (keyword == null || keyword.isEmpty() || m.getName().toLowerCase().contains(needle));
+                boolean guardMatched = (minGuard == null || (m.getAdvantage() != null && m.getAdvantage().getGuardVal() != null && m.getAdvantage().getGuardVal() <= minGuard));
+
+                if (nameMatched && guardMatched) {
                     matchedMoves.add(m);
                 }
             }
-            
+
             if (!matchedMoves.isEmpty()) {
                 Section filteredSection = new Section();
                 filteredSection.setCategory(section.getCategory());
