@@ -13,7 +13,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.yasutake123.sf6_index.dto.CharacterData;
 import com.github.yasutake123.sf6_index.dto.Move;
 import com.github.yasutake123.sf6_index.dto.Section;
-import com.github.yasutake123.sf6_index.dto.MotionFrame;
 
 @Service
 public class CharacterService {
