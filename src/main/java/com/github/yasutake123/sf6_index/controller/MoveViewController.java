@@ -5,6 +5,7 @@ import com.github.yasutake123.sf6_index.service.CharacterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.Model;
 
 import java.io.IOException;
@@ -17,6 +18,13 @@ public class MoveViewController {
     @GetMapping("/table-Alex")
     public String showMoves(Model model) throws IOException{
         model.addAttribute("sections", characterService.getSections());
+        return "index";
+    }
+    
+    @GetMapping("/filter-table-Alex")
+    public String filterMoves(@RequestParam("keyword") String keyword, Model model) throws IOException{
+        model.addAttribute("sections", characterService.searchMovesByName(keyword));
+        model.addAttribute("keyword", keyword);
         return "index";
     }
     
