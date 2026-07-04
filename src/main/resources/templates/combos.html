@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SF6 Combo Index</h1>
+    <p>ALEXのコンボ一覧</p>
+
+    <form action="" method="get">
+        
+    </form>
+
+    <table id="comboTable" border="1">
+        <thead>
+            <tr>
+                <th>レシピ</th>
+                <th>ダメージ</th>
+                <th>Dゲージ</th>
+                <th>SAゲージ</th>
+                <th>備考</th>
+            </tr>
+        </thead>
+        <tbody id="comboTableBody" th:each="combo : ${combos}">
+            <tr>
+                <td th:text="${combo.recipe}"></td>
+                <td th:text="${combo.damage}"></td>
+                <td th:text="${combo.driveGauge}"></td>
+                <td th:text="${combo.saGaugeGain}"></td>
+                <td th:text="${combo.notes}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
